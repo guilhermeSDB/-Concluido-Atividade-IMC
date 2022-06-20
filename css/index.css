@@ -1,0 +1,251 @@
+.none {
+  display: none;
+}
+
+.azul {
+  color: blue !important;
+}
+
+.verde {
+  color: green !important;
+}
+
+.vermelho {
+  color: red !important;
+}
+
+@font-face {
+  font-family: "LouisGeorgeCafe";
+  src: url("/src/fonts/Louis_George_Cafe.ttf") format("truetype");
+}
+@font-face {
+  font-family: "LouisGeorgeCafeBold";
+  src: url("/src/fonts/Louis_George_Cafe_Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "LouisGeorgeCafeLight";
+  src: url("/src/fonts/Louis_George_Cafe_Light.ttf") format("truetype");
+}
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+* {
+  font-family: "LouisGeorgeCafeLight", sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+body main#calculadora {
+  width: 18rem;
+  padding: 1.2rem;
+  border: 4px solid #7777FF;
+  border-radius: 15px;
+  height: 35rem;
+}
+body main#calculadora h1.title {
+  font-family: "LouisGeorgeCafeBold", sans-serif;
+  color: #7777FF;
+  font-size: 2.25rem;
+}
+body main#calculadora h1.title span {
+  font-family: "LouisGeorgeCafeLight", sans-serif;
+  color: #000000;
+  font-weight: 100;
+}
+body main#calculadora p {
+  font-family: "LouisGeorgeCafeBold", sans-serif;
+  color: #372B7B;
+  font-size: 0.875rem;
+}
+body main#calculadora section#selectGenre {
+  display: flex;
+  justify-content: space-between;
+}
+body main#calculadora section#selectGenre div {
+  position: relative;
+}
+body main#calculadora section#selectGenre input[type=radio] {
+  display: none;
+}
+body main#calculadora section#selectGenre button {
+  border: none;
+  opacity: 0.3;
+  transition: 0.3s;
+  background-color: transparent;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+body main#calculadora section#selectGenre button img {
+  width: 100px;
+}
+body main#calculadora section#selectGenre .active {
+  opacity: 1;
+}
+body main#calculadora section#selectGenre .oval {
+  border-radius: 100px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 2.2rem;
+  margin: 0 0.3rem;
+}
+body main#calculadora section#infos {
+  margin: 1rem 0;
+}
+body main#calculadora section#infos div.boxgroup {
+  padding: 1rem 0;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  background: #F6FAFF;
+  box-shadow: 20px 20px 60px #E8EBFF, -20px -20px 60px #E8EBFF;
+}
+body main#calculadora section#infos div.boxgroup div.imageBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main#calculadora section#infos div.boxgroup div.imageBox img {
+  width: 1.5rem;
+}
+body main#calculadora section#infos div.boxgroup label {
+  font-family: "LouisGeorgeCafeBold", sans-serif;
+  font-size: 0.875rem;
+}
+body main#calculadora section#infos div.boxgroup label span {
+  color: #7777FF;
+}
+body main#calculadora section#infos div.boxgroup input {
+  font-family: "LouisGeorgeCafeBold", sans-serif;
+  border: 1px solid #7777FF;
+  border-radius: 10px;
+  width: 3rem;
+  padding: 0.8rem 1rem;
+  transition: 0.3s;
+  color: #372B7B;
+  box-shadow: none;
+  outline: none;
+}
+body main#calculadora section#infos div.boxgroup input:focus {
+  border: 1px solid #372B7B;
+  color: #372B7B;
+}
+body main#calculadora button#calcBtn {
+  background: rgb(119, 119, 255);
+  background: linear-gradient(0deg, rgb(119, 119, 255) 0%, rgb(148, 148, 255) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7777ff",endColorstr="#9494ff",GradientType=1);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: LouisGeorgeCafeBold;
+  letter-spacing: 1.5px;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 15px;
+  color: #F6FAFF;
+  padding: 0.7rem 0;
+  width: 100%;
+}
+body main#calculadora button#calcBtn img {
+  width: 1.25rem;
+  margin: 0 0.5rem;
+}
+body .none {
+  display: none;
+}
+body .azul {
+  color: blue !important;
+}
+body .verde {
+  color: green !important;
+}
+body .vermelho {
+  color: red !important;
+}
+@font-face {
+  body {
+    font-family: "LouisGeorgeCafe";
+    src: url("/src/fonts/Louis_George_Cafe.ttf") format("truetype");
+  }
+}
+@font-face {
+  body {
+    font-family: "LouisGeorgeCafeBold";
+    src: url("/src/fonts/Louis_George_Cafe_Bold.ttf") format("truetype");
+  }
+}
+@font-face {
+  body {
+    font-family: "LouisGeorgeCafeLight";
+    src: url("/src/fonts/Louis_George_Cafe_Light.ttf") format("truetype");
+  }
+}
+body input,
+body textarea,
+body button,
+body select,
+body a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body main#resultado {
+  width: 18rem;
+  padding: 1.2rem;
+  border: 4px solid #7777FF;
+  border-radius: 15px;
+  height: 35rem;
+}
+body main#resultado h1.title {
+  font-family: "LouisGeorgeCafeBold", sans-serif;
+  color: #7777FF;
+  font-size: 2.25rem;
+}
+body main#resultado h1.title span {
+  font-family: "LouisGeorgeCafeLight", sans-serif;
+  color: #000000;
+  font-weight: 100;
+}
+body main#resultado .resultado_box {
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 1rem 0;
+  text-align: center;
+  background: white;
+  box-shadow: 10px 4px 30px -12px #ababf1, -20px -20px 60px #fff;
+}
+body main#resultado .resultado_box .resultado_numero {
+  color: #7777FF;
+  font-size: 4rem;
+  font-family: "LouisGeorgeCafeBold", sans-serif;
+  margin: 0;
+}
+body main#resultado .resultado_box .resultado_texto {
+  font-family: "LouisGeorgeCafe", sans-serif;
+  font-weight: 900;
+  color: green;
+}
+body main#resultado .resultado_acoes {
+  display: flex;
+  justify-content: center;
+}
+body main#resultado .resultado_acoes img {
+  cursor: pointer;
+}

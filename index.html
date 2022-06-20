@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.min.css">
+    <link rel="stylesheet" href="css/result.min.css">
+    <title>BMI Calculator - Home</title>
+</head>
+<body>
+    <main id="calculadora">
+        <h1 class="title">IMC <span>Calculadora</span></h1>
+        <p class="description">O índice de massa corporal (IMC) é uma medida de gordura corporal com base na altura e peso que se aplica a homens e mulheres adultos.</p>
+        
+        <section id="selectGenre">
+             
+            <div class="maleGroup">
+                <input type="radio" name="genre" value="male" id="male" required>
+                <button id="btnMale" class="animate__animated animate__fadeInDown button1">
+                    <label for="genre"></label>
+                    <img src="/src/images/boy.png" alt="" class="">
+                </button>
+            </div>
+            
+            <div class="femaleGroup">
+                <input type="radio" name="genre" value="female" id="female" required>
+                <button id="btnFemale" class="animate__animated animate__fadeInDown button1">
+                    <label for="genre"></label>
+                    <img src="/src/images/girl.png" alt="">
+                </button>    
+            </div>
+            
+        </section>
+
+        <section id="infos">
+            <div class="boxgroup">
+                <div class="imageBox">
+                    <img src="/src/images/altura.png" alt="">
+                    <label for="altura">Altura <span>cm</span> </label>
+                </div>     
+                <input type="number" id="altura" min="0.60" step="0.31" minlength="3" placeholder="0,00" required>
+            </div>
+            <div class="boxgroup">
+                <div class="imageBox">
+                    <img src="/src/images/peso.png" alt="">
+                    <label for="peso">Peso <span>Kgs</span></label>
+                </div>                
+                <input type="number" id="peso" min="0.0" step="10" minlength="2" placeholder="0" required>
+            </div>
+
+        </section>        
+    
+        <button id="calcBtn">Calculate your BMI <img src="/src/images/right-arrow.png" alt=""></button>
+    </main>
+    
+    <main id="resultado" class="none">
+        <h1 class="title">Seu <span>resultado</span></h1>
+
+        <div class="resultado_box">
+            <h2>Seu IMC é</h2>
+            <p class="resultado_numero">19.5</p>
+            <small>kg/m2</small>
+
+            <p>Você esta com <span class="resultado_texto">Normal</span></p>
+        </div>
+
+        <div class="resultado_acoes">
+            <img src="src/images/refazer.png" alt="">
+        </div>
+
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

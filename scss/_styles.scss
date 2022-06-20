@@ -1,0 +1,66 @@
+//Colors
+$main: #7777FF;
+$white: #F6FAFF;
+$black: #000000;
+$blackMain: #372B7B;
+
+@mixin title{
+
+    h1.title{
+        font-family: $LouisGeorgeCafeBold;
+        color: $main;
+        font-size: 2.25rem;
+
+        span{
+            font-family: $LouisGeorgeCafeLight;
+            color: $black;
+            font-weight: 100;
+        }
+    }
+}
+
+.none{
+    display: none;
+}
+
+.azul{
+    color: blue!important;
+}
+
+.verde{
+    color: green!important;
+}
+
+.vermelho{
+    color:red!important;
+}
+
+
+//Font
+@font-face {
+    font-family: 'LouisGeorgeCafe';
+    src: url("/src/fonts/Louis_George_Cafe.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'LouisGeorgeCafeBold';
+    src: url("/src/fonts/Louis_George_Cafe_Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'LouisGeorgeCafeLight';
+    src: url("/src/fonts/Louis_George_Cafe_Light.ttf") format("truetype");
+}
+
+$LouisGeorgeCafe: 'LouisGeorgeCafe', sans-serif;
+$LouisGeorgeCafeBold: 'LouisGeorgeCafeBold', sans-serif;
+$LouisGeorgeCafeLight: 'LouisGeorgeCafeLight', sans-serif;
+
+//Reset
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
