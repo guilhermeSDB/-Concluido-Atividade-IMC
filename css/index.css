@@ -16,15 +16,15 @@
 
 @font-face {
   font-family: "LouisGeorgeCafe";
-  src: url("/src/fonts/Louis_George_Cafe.ttf") format("truetype");
+  src: url("src/fonts/Louis_George_Cafe.ttf") format("truetype");
 }
 @font-face {
   font-family: "LouisGeorgeCafeBold";
-  src: url("/src/fonts/Louis_George_Cafe_Bold.ttf") format("truetype");
+  src: url("src/fonts/Louis_George_Cafe_Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "LouisGeorgeCafeLight";
-  src: url("/src/fonts/Louis_George_Cafe_Light.ttf") format("truetype");
+  src: url("src/fonts/Louis_George_Cafe_Light.ttf") format("truetype");
 }
 input,
 textarea,
@@ -183,19 +183,19 @@ body .vermelho {
 @font-face {
   body {
     font-family: "LouisGeorgeCafe";
-    src: url("/src/fonts/Louis_George_Cafe.ttf") format("truetype");
+    src: url("src/fonts/Louis_George_Cafe.ttf") format("truetype");
   }
 }
 @font-face {
   body {
     font-family: "LouisGeorgeCafeBold";
-    src: url("/src/fonts/Louis_George_Cafe_Bold.ttf") format("truetype");
+    src: url("src/fonts/Louis_George_Cafe_Bold.ttf") format("truetype");
   }
 }
 @font-face {
   body {
     font-family: "LouisGeorgeCafeLight";
-    src: url("/src/fonts/Louis_George_Cafe_Light.ttf") format("truetype");
+    src: url("src/fonts/Louis_George_Cafe_Light.ttf") format("truetype");
   }
 }
 body input,
