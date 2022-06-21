@@ -39,17 +39,17 @@ $blackMain: #372B7B;
 //Font
 @font-face {
     font-family: 'LouisGeorgeCafe';
-    src: url("src/fonts/Louis_George_Cafe.ttf") format("truetype");
+    src: url("../src/fonts/Louis_George_Cafe.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'LouisGeorgeCafeBold';
-    src: url("src/fonts/Louis_George_Cafe_Bold.ttf") format("truetype");
+    src: url("../src/fonts/Louis_George_Cafe_Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'LouisGeorgeCafeLight';
-    src: url("src/fonts/Louis_George_Cafe_Light.ttf") format("truetype");
+    src: url("../src/fonts/Louis_George_Cafe_Light.ttf") format("truetype");
 }
 
 $LouisGeorgeCafe: 'LouisGeorgeCafe', sans-serif;
